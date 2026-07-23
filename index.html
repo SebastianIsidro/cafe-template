@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Origen — De la finca a la taza</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Tipografías: Fraunces (display), Work Sans (cuerpo), Space Mono (datos/fichas) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-cafe sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Café Origen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn-cafe-fill" href="#ubicacion">Reservar mesa</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <p class="eyebrow mb-3">Tostado en pequeños lotes</p>
+        <h1 class="mb-4">De la finca a la taza, sin atajos</h1>
+        <p class="lead mb-4">Trabajamos directo con caficultores de la región para traer granos trazables, tostados en casa cada semana. Cada taza cuenta de dónde viene.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#menu" class="btn-cafe-fill">Ver el menú</a>
+          <a href="#historia" class="btn-cafe-outline" style="border-color: var(--pergamino-alto); color: var(--pergamino-alto);">Nuestra historia</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="ficha-origen">
+          <div class="sello">LOTE<br>DEL<br>MES</div>
+          <span class="ficha-code">Ficha de origen · #0472</span>
+          <h3>Huila, Colombia</h3>
+          <dl>
+            <dt>Altitud</dt><dd>1.750 msnm</dd>
+            <dt>Proceso</dt><dd>Lavado</dd>
+            <dt>Variedad</dt><dd>Caturra</dd>
+            <dt>Notas</dt><dd>Panela, cítrico, almendra</dd>
+            <dt>Productor</dt><dd>Finca La Esperanza</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Historia ===== -->
+<section id="historia">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <p class="section-eyebrow">Nuestra historia</p>
+        <h2 class="section-title">Tres personas, un tostador y muchas preguntas sobre el café</h2>
+        <p>Empezamos en 2018 preguntándonos por qué era tan difícil saber de dónde venía el café que tomábamos. Hoy visitamos las fincas, elegimos los lotes uno por uno y tostamos en cantidades pequeñas para que cada bolsa llegue fresca.</p>
+        <p>No vendemos café: acompañamos historias de productores hasta tu taza.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="p-4 rounded-3" style="background: var(--pergamino);">
+              <div class="display-serif fs-2">7</div>
+              <div class="section-eyebrow mb-0">Fincas aliadas</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-4 rounded-3" style="background: var(--pergamino);">
+              <div class="display-serif fs-2">2018</div>
+              <div class="section-eyebrow mb-0">Año de inicio</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="p-4 rounded-3" style="background: var(--pergamino);">
+              <div class="display-serif fs-2">100%</div>
+              <div class="section-eyebrow mb-0">Café trazable, lote por lote</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Menú ===== -->
+<section id="menu" class="bg-tostado">
+  <div class="container">
+    <p class="section-eyebrow" style="color: var(--dorado);">Carta</p>
+    <h2 class="section-title" style="color: var(--pergamino-alto);">Lotes en barra esta semana</h2>
+    <div class="row g-4 mt-2">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="carta-lote">
+          <div class="lote-num">LOTE #0472 — HUILA</div>
+          <h4>Espresso</h4>
+          <p>Doble, extraído en 27 segundos. Notas de panela y almendra tostada.</p>
+          <div class="precio"><span>Sencillo / Doble</span><span>S/ 7 · S/ 9</span></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="carta-lote">
+          <div class="lote-num">LOTE #0509 — CAJAMARCA</div>
+          <h4>Filtrado V60</h4>
+          <p>Método por goteo, servido en jarra individual. Taza limpia, cítrica.</p>
+          <div class="precio"><span>350 ml</span><span>S/ 12</span></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="carta-lote">
+          <div class="lote-num">LOTE #0472 — HUILA</div>
+          <h4>Flat White</h4>
+          <p>Doble espresso con leche vaporizada a baja temperatura, textura sedosa.</p>
+          <div class="precio"><span>250 ml</span><span>S/ 11</span></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="carta-lote">
+          <div class="lote-num">LOTE #0388 — SAN MARTÍN</div>
+          <h4>Cold Brew</h4>
+          <p>Reposo en frío 18 horas. Cuerpo suave, dulzor natural, sin amargor.</p>
+          <div class="precio"><span>400 ml</span><span>S/ 13</span></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="carta-lote">
+          <div class="lote-num">OBRADOR PROPIO</div>
+          <h4>Croissant de almendra</h4>
+          <p>Horneado cada mañana, relleno de crema de almendra tostada.</p>
+          <div class="precio"><span>Unidad</span><span>S/ 9</span></div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="carta-lote">
+          <div class="lote-num">OBRADOR PROPIO</div>
+          <h4>Bizcocho de naranja</h4>
+          <p>Con ralladura de naranja y un toque de cardamomo.</p>
+          <div class="precio"><span>Porción</span><span>S/ 8</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Ubicación ===== -->
+<section id="ubicacion">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-6">
+        <p class="section-eyebrow">Visítanos</p>
+        <h2 class="section-title">Un lugar tranquilo para tomarte tu tiempo</h2>
+        <p class="mb-4">Contamos con mesas junto a la ventana, wifi y enchufes para quienes necesitan trabajar un rato con calma.</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><strong>Dirección:</strong> Av. Origen 245, Lima</li>
+          <li class="mb-2"><strong>Teléfono:</strong> +51 999 000 111</li>
+          <li><strong>Correo:</strong> hola@cafeorigen.pe</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-4 rounded-3" style="background: var(--pergamino);">
+          <p class="section-eyebrow mb-3">Horario</p>
+          <ul class="horario-list">
+            <li><span>Lunes a viernes</span><span>7:00 — 20:00</span></li>
+            <li><span>Sábados</span><span>8:00 — 21:00</span></li>
+            <li><span>Domingos</span><span>8:00 — 18:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="footer-brand mb-2">Café Origen</div>
+        <p>Tostado en pequeños lotes, directo de la finca a tu taza.</p>
+      </div>
+      <div class="col-md-4">
+        <p class="section-eyebrow" style="color: var(--dorado);">Enlaces</p>
+        <p><a href="#historia">Historia</a></p>
+        <p><a href="#menu">Menú</a></p>
+        <p><a href="#ubicacion">Ubicación</a></p>
+      </div>
+      <div class="col-md-4">
+        <p class="section-eyebrow" style="color: var(--dorado);">Síguenos</p>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <hr class="my-4" style="border-color: rgba(247,243,234,0.15);">
+    <p class="mb-0">© 2026 Café Origen. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
